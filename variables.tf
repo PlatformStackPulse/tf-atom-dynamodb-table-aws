@@ -30,7 +30,7 @@ variable "dynamodb_attributes" {
     type = string
   }))
   validation {
-    condition     = length(var.attributes) > 0
+    condition     = length(var.dynamodb_attributes) > 0
     error_message = "At least one attribute must be defined."
   }
 }
