@@ -23,7 +23,7 @@ variable "range_key" {
   default     = null
 }
 
-variable "attributes" {
+variable "dynamodb_attributes" {
   description = "List of attribute definitions"
   type = list(object({
     name = string
